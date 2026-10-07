@@ -1,1 +1,356 @@
-a
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pearl Drift - Resif Gezgini</title>
+
+    <meta name="description"
+          content="Pearl Drift: Resif Gezgini - Okyanusun derinliklerinde engelleri aş, incileri topla ve rekorunu kır!">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #061b2b;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 30px 20px;
+
+            background:
+                radial-gradient(circle at 50% 20%, #164c6b 0%, transparent 45%),
+                linear-gradient(180deg, #082b43 0%, #03121f 100%);
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 28px;
+            margin-bottom: 25px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 21px;
+            color: #a9d9ed;
+            margin-bottom: 25px;
+        }
+
+        .description {
+            max-width: 650px;
+            margin: 0 auto 30px;
+            color: #d7eaf3;
+            font-size: 17px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 14px 28px;
+            background: #ffffff;
+            color: #07304a;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        .section {
+            padding: 70px 20px;
+            background: #f5f9fb;
+            color: #102a3a;
+        }
+
+        .section.dark {
+            background: #082437;
+            color: white;
+        }
+
+        .section-container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .feature {
+            background: white;
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        }
+
+        .feature h3 {
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            color: #526673;
+        }
+
+        .how-to {
+            max-width: 650px;
+            margin: auto;
+        }
+
+        .step {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: rgba(255,255,255,0.08);
+            border-radius: 14px;
+        }
+
+        .step strong {
+            color: #72d6ff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background: #03121f;
+            color: #8ba4b2;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #72d6ff;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            .subtitle {
+                font-size: 18px;
+            }
+
+            .description {
+                font-size: 15px;
+            }
+
+            .logo {
+                width: 100px;
+                height: 100px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<section class="hero">
+    <div class="container">
+
+        <!-- Google Play'deki uygulama ikonunu buraya koyabilirsin -->
+        <img
+            class="logo"
+            src="icon.png"
+            alt="Pearl Drift uygulama ikonu">
+
+        <h1>Pearl Drift</h1>
+
+        <div class="subtitle">
+            Resif Gezgini
+        </div>
+
+        <p class="description">
+            Okyanusun derinliklerine dal, mercan resiflerinin arasından
+            ustalıkla ilerle, incileri topla ve kendi rekorunu kır.
+        </p>
+
+        <a
+            class="button"
+            href="https://play.google.com/store/apps/details?id=com.ha.pearldrift"
+            target="_blank">
+            Google Play'den İndir
+        </a>
+
+    </div>
+</section>
+
+
+<section class="section">
+
+    <div class="section-container">
+
+        <h2>Oyunun Özellikleri</h2>
+
+        <div class="features">
+
+            <div class="feature">
+                <h3>🎮 Tek Dokunuşla Oyna</h3>
+                <p>
+                    Ekrana basılı tutarak yüksel,
+                    bırakarak yavaşça alçal.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>🦪 İnci Topla</h3>
+                <p>
+                    Resiflerdeki incileri topla ve
+                    kalkanını kullanarak çarpışmalardan kaçın.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>🌊 Zorlu Resifler</h3>
+                <p>
+                    Skorun yükseldikçe oyun hızlanır
+                    ve geçişler daha zor hale gelir.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>🏆 Rekorunu Kır</h3>
+                <p>
+                    En iyi 3 skorunu yerel liderlik
+                    tablosunda takip et.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>🐠 Okyanus Dünyası</h3>
+                <p>
+                    Balık sürüleri, kabarcıklar,
+                    deniz yosunları ve ışık huzmeleriyle
+                    renkli bir su altı dünyası.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>📴 İnternetsiz Oyna</h3>
+                <p>
+                    İnternet bağlantısına ihtiyaç duymadan
+                    oyunun keyfini çıkar.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section dark">
+
+    <div class="section-container">
+
+        <h2>Nasıl Oynanır?</h2>
+
+        <div class="how-to">
+
+            <div class="step">
+                <strong>1. Basılı Tut</strong>
+                <br>
+                Dalgıcın yukarı doğru hareket eder.
+            </div>
+
+            <div class="step">
+                <strong>2. Bırak</strong>
+                <br>
+                Dalgıcın yavaşça aşağı doğru iner.
+            </div>
+
+            <div class="step">
+                <strong>3. Engellerden Geç</strong>
+                <br>
+                Mercan duvarlarının arasından geçerek puan kazan.
+            </div>
+
+            <div class="step">
+                <strong>4. İnci Topla</strong>
+                <br>
+                İncileri topla, kalkanını kazan ve daha yüksek skor yap.
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="section-container" style="text-align:center;">
+
+        <h2>Hazır mısın?</h2>
+
+        <p style="margin-bottom:25px;">
+            Dalışa başla ve kendi rekorunu kır!
+        </p>
+
+        <a
+            class="button"
+            href="https://play.google.com/store/apps/details?id=com.ha.pearldrift"
+            target="_blank">
+            Pearl Drift'i İndir
+        </a>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <p>
+        © 2026 Pearl Drift · Halil İbrahim AKDENİZ
+    </p>
+
+    <p style="margin-top:8px;">
+        <a href="https://play.google.com/store/apps/details?id=com.ha.pearldrift">
+            Google Play
+        </a>
+    </p>
+
+</footer>
+
+</body>
+</html>
