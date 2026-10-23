@@ -1,356 +1,50 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Pearl Drift - Resif Gezgini</title>
-
-    <meta name="description"
-          content="Pearl Drift: Resif Gezgini - Okyanusun derinliklerinde engelleri aş, incileri topla ve rekorunu kır!">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #061b2b;
-            color: #ffffff;
-            line-height: 1.6;
-        }
-
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 30px 20px;
-
-            background:
-                radial-gradient(circle at 50% 20%, #164c6b 0%, transparent 45%),
-                linear-gradient(180deg, #082b43 0%, #03121f 100%);
-        }
-
-        .container {
-            max-width: 900px;
-            width: 100%;
-        }
-
-        .logo {
-            width: 120px;
-            height: 120px;
-            border-radius: 28px;
-            margin-bottom: 25px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
-        }
-
-        h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
-        }
-
-        .subtitle {
-            font-size: 21px;
-            color: #a9d9ed;
-            margin-bottom: 25px;
-        }
-
-        .description {
-            max-width: 650px;
-            margin: 0 auto 30px;
-            color: #d7eaf3;
-            font-size: 17px;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 14px 28px;
-            background: #ffffff;
-            color: #07304a;
-            text-decoration: none;
-            border-radius: 12px;
-            font-weight: bold;
-            transition: 0.2s;
-        }
-
-        .button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-        }
-
-        .section {
-            padding: 70px 20px;
-            background: #f5f9fb;
-            color: #102a3a;
-        }
-
-        .section.dark {
-            background: #082437;
-            color: white;
-        }
-
-        .section-container {
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        h2 {
-            text-align: center;
-            font-size: 32px;
-            margin-bottom: 40px;
-        }
-
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-        }
-
-        .feature {
-            background: white;
-            padding: 25px;
-            border-radius: 16px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-        }
-
-        .feature h3 {
-            margin-bottom: 10px;
-        }
-
-        .feature p {
-            color: #526673;
-        }
-
-        .how-to {
-            max-width: 650px;
-            margin: auto;
-        }
-
-        .step {
-            margin-bottom: 20px;
-            padding: 20px;
-            background: rgba(255,255,255,0.08);
-            border-radius: 14px;
-        }
-
-        .step strong {
-            color: #72d6ff;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px 20px;
-            background: #03121f;
-            color: #8ba4b2;
-            font-size: 14px;
-        }
-
-        footer a {
-            color: #72d6ff;
-            text-decoration: none;
-        }
-
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 36px;
-            }
-
-            .subtitle {
-                font-size: 18px;
-            }
-
-            .description {
-                font-size: 15px;
-            }
-
-            .logo {
-                width: 100px;
-                height: 100px;
-            }
-
-            h2 {
-                font-size: 27px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-<section class="hero">
-    <div class="container">
-
-        <!-- Google Play'deki uygulama ikonunu buraya koyabilirsin -->
-        <img
-            class="logo"
-            src="icon.png"
-            alt="Pearl Drift uygulama ikonu">
-
-        <h1>Pearl Drift</h1>
-
-        <div class="subtitle">
-            Resif Gezgini
-        </div>
-
-        <p class="description">
-            Okyanusun derinliklerine dal, mercan resiflerinin arasından
-            ustalıkla ilerle, incileri topla ve kendi rekorunu kır.
-        </p>
-
-        <a
-            class="button"
-            href="https://play.google.com/store/apps/details?id=com.ha.pearldrift"
-            target="_blank">
-            Google Play'den İndir
-        </a>
-
-    </div>
-</section>
-
-
-<section class="section">
-
-    <div class="section-container">
-
-        <h2>Oyunun Özellikleri</h2>
-
-        <div class="features">
-
-            <div class="feature">
-                <h3>🎮 Tek Dokunuşla Oyna</h3>
-                <p>
-                    Ekrana basılı tutarak yüksel,
-                    bırakarak yavaşça alçal.
-                </p>
-            </div>
-
-            <div class="feature">
-                <h3>🦪 İnci Topla</h3>
-                <p>
-                    Resiflerdeki incileri topla ve
-                    kalkanını kullanarak çarpışmalardan kaçın.
-                </p>
-            </div>
-
-            <div class="feature">
-                <h3>🌊 Zorlu Resifler</h3>
-                <p>
-                    Skorun yükseldikçe oyun hızlanır
-                    ve geçişler daha zor hale gelir.
-                </p>
-            </div>
-
-            <div class="feature">
-                <h3>🏆 Rekorunu Kır</h3>
-                <p>
-                    En iyi 3 skorunu yerel liderlik
-                    tablosunda takip et.
-                </p>
-            </div>
-
-            <div class="feature">
-                <h3>🐠 Okyanus Dünyası</h3>
-                <p>
-                    Balık sürüleri, kabarcıklar,
-                    deniz yosunları ve ışık huzmeleriyle
-                    renkli bir su altı dünyası.
-                </p>
-            </div>
-
-            <div class="feature">
-                <h3>📴 İnternetsiz Oyna</h3>
-                <p>
-                    İnternet bağlantısına ihtiyaç duymadan
-                    oyunun keyfini çıkar.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<section class="section dark">
-
-    <div class="section-container">
-
-        <h2>Nasıl Oynanır?</h2>
-
-        <div class="how-to">
-
-            <div class="step">
-                <strong>1. Basılı Tut</strong>
-                <br>
-                Dalgıcın yukarı doğru hareket eder.
-            </div>
-
-            <div class="step">
-                <strong>2. Bırak</strong>
-                <br>
-                Dalgıcın yavaşça aşağı doğru iner.
-            </div>
-
-            <div class="step">
-                <strong>3. Engellerden Geç</strong>
-                <br>
-                Mercan duvarlarının arasından geçerek puan kazan.
-            </div>
-
-            <div class="step">
-                <strong>4. İnci Topla</strong>
-                <br>
-                İncileri topla, kalkanını kazan ve daha yüksek skor yap.
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<section class="section">
-
-    <div class="section-container" style="text-align:center;">
-
-        <h2>Hazır mısın?</h2>
-
-        <p style="margin-bottom:25px;">
-            Dalışa başla ve kendi rekorunu kır!
-        </p>
-
-        <a
-            class="button"
-            href="https://play.google.com/store/apps/details?id=com.ha.pearldrift"
-            target="_blank">
-            Pearl Drift'i İndir
-        </a>
-
-    </div>
-
-</section>
-
-
-<footer>
-
-    <p>
-        © 2026 Pearl Drift · Halil İbrahim AKDENİZ
-    </p>
-
-    <p style="margin-top:8px;">
-        <a href="https://play.google.com/store/apps/details?id=com.ha.pearldrift">
-            Google Play
-        </a>
-    </p>
-
-</footer>
-
-</body>
-</html>
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pearl Drift — Tek dokunuşla oynanan sualtı refleks oyunu</title>
+<meta name="description" content="5 harita, yeni tehlikeler, kostümler ve günlük ödül. Pearl Drift Google Play'de.">
+<meta property="og:title" content="Pearl Drift"><meta property="og:description" content="Resifte süzül, inci topla, kalkan kazan!">
+<meta property="og:image" content="img/og.png"><meta property="og:type" content="website">
+<link rel="icon" href="img/simge.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoGame","name":"Pearl Drift","operatingSystem":"Android","applicationCategory":"GameApplication","url":"https://play.google.com/store/apps/details?id=com.ha.pearldrift","offers":{"@type":"Offer","price":"0","priceCurrency":"TRY"}}</script>
+<style>
+:root{--teal:#0a8a8f;--navy:#031b30;--gold:#FFD54F;--brown:#3E2723}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,"Segoe UI",Roboto,sans-serif;color:#e8fffb;background:var(--navy);line-height:1.6}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header.hero{background:linear-gradient(160deg,#031b30,#0a6a73 60%,#1b9aa5);padding:56px 0 70px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+.logo{display:flex;align-items:center;gap:12px;margin-bottom:22px;font-weight:900;font-size:20px}.logo img{width:46px;height:46px;border-radius:12px}
+h1{font-size:clamp(46px,8vw,92px);line-height:.95;margin:0 0 14px;color:var(--gold);-webkit-text-stroke:8px var(--brown);paint-order:stroke fill;font-weight:900}
+.lead{font-size:clamp(18px,2.6vw,24px);margin:0 0 26px;color:#d6fff7}
+.cta{display:inline-block;padding:16px 30px;border-radius:999px;background:#FF8F00;color:#fff;font-weight:900;font-size:20px;text-decoration:none;border:4px solid #5D4037;box-shadow:0 8px 0 #5D4037;transition:transform .15s}
+.cta:hover{transform:translateY(-2px)}
+.phones{display:flex;justify-content:center;gap:0;position:relative;min-height:420px}
+.phones img{width:46%;border-radius:22px;border:5px solid #0a0f1a;box-shadow:0 20px 40px rgba(0,0,0,.5);position:absolute}
+.phones img:nth-child(1){left:2%;top:40px;transform:rotate(-7deg)}.phones img:nth-child(2){left:27%;top:0;z-index:2}.phones img:nth-child(3){right:2%;top:40px;transform:rotate(7deg)}
+section{padding:60px 0}h2{font-size:34px;margin:0 0 24px;color:var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:rgba(255,255,255,.07);border:1px solid rgba(184,255,241,.25);border-radius:20px;padding:20px}.card h3{margin:0 0 6px;font-size:20px}.card p{margin:0;color:#c8efe9}
+.gallery{display:flex;gap:16px;overflow-x:auto;padding-bottom:14px;scroll-snap-type:x mandatory}.gallery img{height:480px;border-radius:22px;border:5px solid #0a0f1a;scroll-snap-align:start;flex:0 0 auto}
+details{background:rgba(255,255,255,.07);border-radius:14px;padding:14px 18px;margin:10px 0}summary{cursor:pointer;font-weight:800}
+footer{padding:40px 0;color:#9fd8d0;text-align:center;font-size:14px;border-top:1px solid rgba(184,255,241,.2)}footer a{color:#c8fff4}
+@media(max-width:760px){.hero .wrap{grid-template-columns:1fr}.phones{min-height:380px}}
+</style></head><body>
+<header class="hero"><div class="wrap"><div>
+<div class="logo"><img src="img/simge.png" alt="Pearl Drift simgesi">Pearl Drift</div>
+<h1>PEARL<br>DRIFT</h1><p class="lead">Basılı tut, yüksel. Bırak, bat. İnci topla, tehlikelerden kaç, 5 farklı sualtı dünyasında rekor kır!</p>
+<a class="cta" href="https://play.google.com/store/apps/details?id=com.ha.pearldrift">Google Play’de indir</a></div>
+<div class="phones"><img src="img/hero_derin.jpg" alt="Derin Mavi haritası"><img src="img/hero_resif.jpg" alt="Mercan Resifi oynanışı"><img src="img/hero_volkan.jpg" alt="Volkanik Geçit"></div></div></header>
+<section><div class="wrap"><h2>Neler var?</h2><div class="grid">
+<div class="card"><h3>🌊 5 harita</h3><p>Mercan Resifi, Derin Mavi, Karanlık Uçurum, Volkanik Geçit ve Buzul Denizi.</p></div>
+<div class="card"><h3>⚠️ Yeni tehlikeler</h3><p>Denizanası, zıplayan kirpi ve uyarıyla gelen barakuda.</p></div>
+<div class="card"><h3>🦪 Kombo ve kalkan</h3><p>Üst üste inci topla, bonus kazan, kalkanı aç.</p></div>
+<div class="card"><h3>🛍️ Koleksiyon</h3><p>Kostüm, aksesuar, iz efekti, inci stili ve güçlendirmeler.</p></div>
+<div class="card"><h3>🎁 Günlük ödül</h3><p>Her gün gir, art arda gün sayısı arttıkça daha çok inci kazan.</p></div>
+<div class="card"><h3>💙 İkinci şans</h3><p>İnciyle ya da isteğe bağlı kısa bir reklamla devam et.</p></div></div></div></section>
+<section><div class="wrap"><h2>Ekran görüntüleri</h2><div class="gallery">
+<img src="img/01_oyun_mercan.jpg" alt=""><img src="img/02_haritalar_derin_mavi.jpg" alt=""><img src="img/03_karanlik_ucurum.jpg" alt=""><img src="img/04_tehlikeler_volkanik.jpg" alt=""><img src="img/05_turbo_buzul.jpg" alt=""><img src="img/06_magaza_kostum.jpg" alt=""><img src="img/07_magaza_guc_sandik.jpg" alt=""><img src="img/08_ikinci_sans.jpg" alt=""></div></div></section>
+<section><div class="wrap"><h2>Sık sorulanlar</h2>
+<details><summary>Oyun ücretsiz mi?</summary><p>Evet, ücretsizdir ve reklam içerir. Ödüllü reklamlar isteğe bağlıdır.</p></details>
+<details><summary>Gerçek parayla satın alma var mı?</summary><p>Hayır. İnciler yalnızca oynayarak kazanılır.</p></details>
+<details><summary>Kendi fotoğrafımı kullanabilir miyim?</summary><p>Evet; fotoğraf yalnızca cihazında saklanır, internete gönderilmez. Yalnızca sana ait veya izin aldığın fotoğrafları kullan.</p></details>
+<details><summary>Kontrol nasıl çalışıyor?</summary><p>Ekrana basılı tut: dalgıç yükselir. Bırak: batar. Ayarlardan hassasiyeti değiştirebilirsin.</p></details></div></section>
+<footer><div class="wrap">© [YIL] [GELİŞTİRİCİ ADI] • <a href="gizlilik.html">Gizlilik Politikası</a> • <a href="mailto:[E-POSTA]">İletişim</a></div></footer></body></html>
